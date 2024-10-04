@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ohOLkYu+GUVVJunm2C4t44VXEQcqafXqNjjtWndHrpM=",
+  "Hash": "ZRA34tJze9ZexY2OFXUhW13pjiLtueva/aKN0pm8Mg8=",
   "Source": "GameStore.Frontend",
   "BasePath": "_content/GameStore.Frontend",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GameStore.Frontend\\wwwroot",
       "Source": "GameStore.Frontend",
-      "ContentRoot": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\",
       "BasePath": "_content/GameStore.Frontend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "Identity": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "GameStore.Frontend.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css"
+      "OriginalItemSpec": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css"
     },
     {
-      "Identity": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "Identity": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "GameStore.Frontend.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css"
+      "OriginalItemSpec": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css"
     },
     {
-      "Identity": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\app.css",
+      "Identity": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\app.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\wwwroot\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "app.css",
       "AssetKind": "All",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj": {}
+    "D:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj": {}
   },
   "projects": {
-    "d:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj": {
+    "D:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj",
+        "projectUniqueName": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj",
         "projectName": "GameStore.Frontend",
-        "projectPath": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj",
+        "projectPath": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\GameStore.Frontend.csproj",
         "packagesPath": "C:\\Users\\akrom\\.nuget\\packages\\",
-        "outputPath": "d:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\",
+        "outputPath": "D:\\projects\\GameStoreUI\\GameStore.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
