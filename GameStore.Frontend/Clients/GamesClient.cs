@@ -17,28 +17,28 @@ public class GamesClient
     new() {
         Id = 2,
         Name = "The Witcher 3: Wild Hunt",
-        Genre = "RPG",
+        Genre = "Shooter",
         Price = 29.99m,
         ReleasedDate = new DateOnly(2015, 5, 19)
     },
     new() {
         Id = 3,
         Name = "Cyberpunk 2077",
-        Genre = "RPG",
+        Genre = "Fighting",
         Price = 59.99m,
         ReleasedDate = new DateOnly(2020, 12, 10)
     },
     new() {
         Id = 4,
         Name = "Red Dead Redemption 2",
-        Genre = "Adventure",
+        Genre = "Shooter",
         Price = 49.99m,
         ReleasedDate = new DateOnly(2018, 10, 26)
     },
     new() {
         Id = 5,
         Name = "Minecraft",
-        Genre = "Sandbox",
+        Genre = "Adventure",
         Price = 26.95m,
         ReleasedDate = new DateOnly(2011, 11, 18)
     }
@@ -56,7 +56,8 @@ public class GamesClient
         {
             Id = games.Count + 1,
             Name = game.Name,
-            Genre = game.Name,
+            // There was a bug that i fixed
+            Genre = genre.Name,
             Price = game.Price,
             ReleasedDate = game.ReleasedDate
         };
