@@ -1,72 +1,51 @@
 ﻿@page "/"
 @using Models
+@using Clients
 
 <PageTitle>Game Catalog</PageTitle>
 
-<table class="table table-striped table-bordered table-hover mt-3">
-    <thead class="table-danger">
-        <th>Id</th>
-        <th>Name</th>
-        <th>Genre</th>
-        <th class="text-end">Price</th>
-        <th>Released Date</th>
-        <th></th>
-    </thead>
-    <tbody>
-        
-        @foreach  (var game in games)
-        {
-            <tr>
-                <td>@game.Id</td>
-                <td>@game.Name</td>
-                <td>@game.Genre</td>
-                <td class="text-end">@game.Price.ToString("C2")</td>
-                <td>@game.ReleasedDate</td>
-                <td></td>
-            </tr>
-        }
-        
-    </tbody>
-</table>
+@if(games is null)
+{
+    <p><em>Loading...</em></p>
+}
+
+else{
+    <table class="table table-striped table-bordered table-hover mt-3">
+        <thead class="table-danger">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Genre</th>
+            <th class="text-end">Price</th>
+            <th>Released Date</th>
+            <th></th>
+        </thead>
+        <tbody>
+
+            @foreach (var game in games)
+            {
+                <tr>
+                    <td>@game.Id</td>
+                    <td>@game.Name</td>
+                    <td>@game.Genre</td>
+                    <td class="text-end">@game.Price.ToString("C2")</td>
+                    <td>@game.ReleasedDate</td>
+                    <td></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
 
 @code {
-private GameSummary[] games =
-[
-    new() {
-        Id = 1,
-        Name = "GTA San Andreas",
-        Genre = "Adventure",
-        Price = 19.99m,
-        ReleasedDate = new DateOnly(2004, 9, 9)
-    },
-    new() {
-        Id = 2,
-        Name = "The Witcher 3: Wild Hunt",
-        Genre = "RPG",
-        Price = 29.99m,
-        ReleasedDate = new DateOnly(2015, 5, 19)
-    },
-    new() {
-        Id = 3,
-        Name = "Cyberpunk 2077",
-        Genre = "RPG",
-        Price = 59.99m,
-        ReleasedDate = new DateOnly(2020, 12, 10)
-    },
-    new() {
-        Id = 4,
-        Name = "Red Dead Redemption 2",
-        Genre = "Adventure",
-        Price = 49.99m,
-        ReleasedDate = new DateOnly(2018, 10, 26)
-    },
-    new() {
-        Id = 5,
-        Name = "Minecraft",
-        Genre = "Sandbox",
-        Price = 26.95m,
-        ReleasedDate = new DateOnly(2011, 11, 18)
-    }
-];
 
+    private GamesClient client = new();
+
+    private GameSummary[]? games;
+
+    protected override void OnInitialized()
+    {
+        games = client.GetGames();
+
+    }
 }
