@@ -1,36 +1,11 @@
-﻿@page "/"
-@using Models
+using System;
+using GameStore.Frontend.Models;
 
-<PageTitle>Game Catalog</PageTitle>
+namespace GameStore.Frontend.Clients;
 
-<table class="table table-striped table-bordered table-hover mt-3">
-    <thead class="table-danger">
-        <th>Id</th>
-        <th>Name</th>
-        <th>Genre</th>
-        <th class="text-end">Price</th>
-        <th>Released Date</th>
-        <th></th>
-    </thead>
-    <tbody>
-        
-        @foreach  (var game in games)
-        {
-            <tr>
-                <td>@game.Id</td>
-                <td>@game.Name</td>
-                <td>@game.Genre</td>
-                <td class="text-end">@game.Price.ToString("C2")</td>
-                <td>@game.ReleasedDate</td>
-                <td></td>
-            </tr>
-        }
-        
-    </tbody>
-</table>
-
-@code {
-private GameSummary[] games =
+public class GamesClient
+{
+    private readonly List<GameSummary> games =
 [
     new() {
         Id = 1,
@@ -68,5 +43,5 @@ private GameSummary[] games =
         ReleasedDate = new DateOnly(2011, 11, 18)
     }
 ];
-
+    public GameSummary[] GetGames() => [.. games];
 }
