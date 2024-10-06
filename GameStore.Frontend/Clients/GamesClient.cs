@@ -64,4 +64,23 @@ public class GamesClient
 
         games.Add(gameSummary);
     }
+
+    public GameDetails GetGame(int id)
+    {
+        GameSummary? game = games.Find(game => game.Id == id);
+        ArgumentNullException.ThrowIfNull(game); // validation of null
+
+        var genre = genres.Single(genre => string.Equals(
+            genre.Name, game.Genre,
+            StringComparison.OrdinalIgnoreCase));
+
+        return new GameDetails
+        {
+            Id = game.Id,
+            Name = game.Name,
+            GenreId = genre.Id.ToString(),
+            Price = game.Price,
+            ReleasedDate = game.ReleasedDate
+        };
+    }
 }
